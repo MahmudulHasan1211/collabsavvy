@@ -9,3 +9,12 @@
     width: auto;
     background-color: #EAEAEA;
 }
+.cards{
+    background-color: white;
+    height: 15px;
+}
+.flexy{
+    display: flex;
+    justify-content: space-around;
+    
+}
