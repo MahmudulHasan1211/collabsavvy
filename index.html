@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" href="/images/39b33f33-0afd-4a59-b0ac-12f53e481d79.jpeg" type="image/jpeg">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./CollabSavvy.css">
+    <title>CollabSavvy</title>
+</head>
+<body class="manrope-normal">
+
+    <!-- Background Image Section with Icon and Title -->
+    <div class="relative bg-cover bg-center w-full h-screen" style="background-image: url('/images/017e7f4f-9653-4ba5-bd19-b99698d7964b.jpeg');">
+       <div class="absolute top-4 left-1/2 transform -translate-x-1/2 flex items-center">
+          <i class="fa-regular fa-circle-user text-white text-5xl mr-4"></i>
+          <p class="text-white text-3xl font-semibold pt-px">CollabSavvy</p>
+       </div>
+
+       <!-- Centered "Connect With Influencers and Brands" text and button -->
+       <div class="absolute inset-0 flex items-center justify-center flex-col bg-black bg-opacity-40">
+          <p class="text-white text-6xl font-semibold text-center">Connect With <br> Influencers and Brands</p>
+          <div class="flex">
+            <div class="mr-[8px]">
+
+                <button class="btn btn-primary mt-6">Join as an Influencer</button>
+            </div>
+            <div> <button class="btn btn-primary mt-6 bg-white border-none text-black">Join as a Brand</button></div>
+          </div>
+       </div>
+    </div>
+
+    <!-- signup forms -->
+    <main>
+        <section>
+            <div class="borderStyle">
+
+                <h2 class="mt-10 text-center text-3xl font-semibold pt-12">Influencer Sign Up</h2>
+
+                <div class="flex items-center justify-center pt-8">
+                    <p class="mr-2 font-semibold">Full Name : </p>
+                    <input class="border border-gray-400 rounded " type="text"> <br>
+                </div>
+
+                <div class="flex items-center justify-center pt-8">
+                    <p class="mr-10 font-semibold">Email : </p>
+                    <input class="border border-gray-400 rounded " type="text"> <br>
+                </div>
+
+                <div class="flex items-center justify-center pt-8">
+                    <p class="mr-6 font-semibold">Contact : </p>
+                    <input class="border border-gray-400 rounded " type="text"> <br>
+                </div>
+                
+                <div class="flex items-center justify-center pt-8">
+                    <p class="mr-8 font-semibold">Social Media :</p>
+                    <button class="mr-3" onclick="window.open('https://www.instagram.com', '_blank')">
+                        <i class="fa-brands fa-instagram"></i>
+                    </button>                      
+                    <button class="mr-3" onclick="window.open('https://www.twitter.com', '_blank')">
+                        <i class="fa-brands fa-twitter"></i>
+                      </button>                      
+                    <button class="mr-3" onclick="window.open('https://www.facebook.com', '_blank')">
+                        <i class="fa-brands fa-facebook"></i>                      </button>                      
+                    <button class="mr-3" onclick="window.open('https://www.youtube.com', '_blank')">
+                        <i class="fa-brands fa-youtube"></i>
+                      </button>                      
+                </div>
+
+                <section class="h-screen flex ">
+                    <button class="btn btn-primary mx-auto my-auto mt-8">Sign Up</button>
+                  </section>                
+            </div>
+        </section>
+
+        <section>
+            <p class="font-semibold flex justify-center my-6 text-2xl">Influencer DashBoard</p>
+           <div class="flexy">
+            <div class="card bg-base-100 w-96 shadow-sm">
+                <figure>
+                  <img
+                    src="/images/promotion.jpeg"
+                    alt="Shoes" />
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Get Discounts</h2>
+                  <p>Promote brands and receive compensable discounts on purchases</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Promote Now</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card bg-base-100 w-96 shadow-sm">
+                <figure>
+                 <img src="/images/campaings.jpeg" alt="">
+                </figure>
+                <div class="card-body">
+                  <h2 class="card-title">Find or Bid for Brand Colaborations</h2>
+                  <p>Verify Influencer's value in campaigne and Collaborate for brand parline ships</p>
+                  <div class="card-actions justify-end">
+                    <button class="btn btn-primary">Browse Campaigns</button>
+                  </div>
+                </div>
+              </div>
+           </div>
+        </section>
+
+
+        <section>
+            <div>
+                <div class="relative bg-cover bg-center w-full h-screen" style="background-image: url('/images/third\ image.png');">
+                    <div class="flex justify-between">
+                        <div>
+                            <p class="ml-9 text-3xl py-8">Influencer</p>
+                        </div>
+                        <div>
+                            <p class="mr-9 text-3xl py-8">Dashboard</p>
+                        </div>
+                    </div>            
+            </div>
+        </section>
+    <!-- Get discounts -->
+
+    
+            <section class="min-h-screen bg-gray-100 flex items-center justify-center px-4 py-10">
+                <div class="flex flex-col md:flex-row gap-10 w-full max-w-6xl">
+                  
+                  <!-- LEFT: Current card -->
+                  <div class="flex-1">
+                    <div class="text-center mb-8">
+                      <h2 class="text-5xl py-4 font-bold">Get Discounts</h2>
+                      <p class="opacity-70 text-sm">
+                        Influencer must promote brand products or services on their <br />
+                        social media before receiving discounts.
+                      </p>
+                    </div>
+              
+                    <div class="max-w-md mx-auto p-6 bg-white rounded-xl shadow-md">
+                      <div class="mb-4">
+                        <p class="text-sm font-semibold text-gray-800 mb-2">Posting Options</p>
+                        <div class="space-y-2 text-sm text-gray-700">
+                          <label class="flex items-center space-x-2">
+                            <input type="radio" name="postType" class="form-radio text-blue-600" />
+                            <span>Post (Permanent)</span>
+                          </label>
+                          <label class="flex items-center space-x-2">
+                            <input type="radio" name="postType" class="form-radio text-blue-600" checked />
+                            <span>Story (Temporary)</span>
+                          </label>
+                          <label class="flex items-center space-x-2">
+                            <input type="radio" name="postType" class="form-radio text-blue-600" />
+                            <span>Both</span>
+                          </label>
+                        </div>
+                      </div>
+              
+                      <div class="mb-6">
+                        <p class="text-sm font-semibold text-gray-800 mb-2">Verification</p>
+                        <label class="flex items-center space-x-2 text-sm text-gray-700">
+                          <input type="radio" name="verification" class="form-radio text-blue-600" />
+                          <span>Submit a standard discount video (30 seconds)</span>
+                        </label>
+                      </div>
+              
+                      <button class="w-full bg-blue-600 text-white font-semibold py-2 rounded-md hover:bg-blue-700 transition mb-10">
+                        Unlock Discount
+                      </button>
+                    </div>
+                  </div>
+              
+                  <!-- RIGHT: Previous card -->
+                  <div class="flex-1">
+                    <div class="bg-white max-w-lg mx-auto p-6 rounded-xl shadow-md">
+                      <h2 class="text-xl font-bold text-gray-900 mb-1">Get Discounts</h2>
+                      <p class="text-sm text-gray-600 mb-6">
+                        Promote brand products or services on your social media to receive discounts.
+                      </p>
+              
+                      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                          <p class="text-sm font-medium text-gray-800 mb-2">Posting Options</p>
+                          <div class="space-y-2 text-sm text-gray-700">
+                            <label class="flex items-center space-x-2">
+                              <input type="radio" name="posting" class="form-radio text-teal-600" />
+                              <span>Post (Permanent)</span>
+                            </label>
+                            <label class="flex items-center space-x-2">
+                              <input type="radio" name="posting" class="form-radio text-teal-600" />
+                              <span>Story (Temporary)</span>
+                            </label>
+                            <label class="flex items-center space-x-2">
+                              <input type="radio" name="posting" class="form-radio text-teal-600" checked />
+                              <span>Both</span>
+                            </label>
+                          </div>
+                        </div>
+              
+                        <div>
+                          <p class="text-sm font-medium text-gray-800 mb-2">Content Format</p>
+                          <div class="space-y-2 text-sm text-gray-700">
+                            <label class="flex items-center space-x-2">
+                              <input type="radio" name="format" class="form-radio text-teal-600" />
+                              <span>Photo (Standard discount)</span>
+                            </label>
+                            <label class="flex items-center space-x-2">
+                              <input type="radio" name="format" class="form-radio text-teal-600" checked />
+                              <span>Video (30 seconds minimum)</span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+              
+                      <div class="mb-4">
+                        <label class="block text-sm font-medium text-gray-800 mb-1">
+                          Verification
+                        </label>
+                        <input
+                          type="text"
+                          placeholder="Social media post link"
+                          class="w-full border border-gray-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500"
+                        />
+                      </div>
+              
+                      <div class="mb-6">
+                        <label class="block text-sm font-medium text-gray-800 mb-1">
+                          Upload proof (screenshot/video)
+                        </label>
+                        <input
+                          type="file"
+                          class="block w-full text-sm text-gray-700 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-teal-50 file:text-teal-700 hover:file:bg-teal-100"
+                        />
+                      </div>
+                      <button class="w-full bg-teal-700 text-white font-semibold py-2 rounded-md hover:bg-teal-800 transition">Submit</button>
+                    </div>
+                  </div>                 
+                </div>
+              </section>
+              
+
+              <!-- new section for find brand  -->
+              <section class="max-w-xl mx-auto mt-8 p-4">
+                <!-- Top Nav -->
+                <div class="flex justify-between items-center mb-6">
+                  <span class="text-lg font-semibold">Influencer</span>
+                  <span class="text-blue-600 font-medium cursor-pointer">Dashboard</span>
+                </div>
+            
+                <!-- Title -->
+                <h2 class="text-2xl font-bold mb-6">Find or Bid for Brand Collaborations</h2>
+            
+                <!-- Collaboration Cards -->
+                <div class="space-y-4">
+            
+                  <!-- Card: CleverTech -->
+                  <div class="bg-white rounded-xl shadow p-4">
+                    <h3 class="font-semibold text-lg">CleverTech</h3>
+                    <p class="text-sm text-gray-500 mb-1">Software Company</p>
+                    <p class="text-sm">Collaboration: <span class="font-medium">Sponsored Post</span></p>
+                    <p class="text-sm text-red-600 line-through">$200</p>
+                    <p class="text-sm mb-3">Budget Range: <span class="font-medium">$200–500</span></p>
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 text-sm">Submit Proposal</button>
+                  </div>
+            
+                  <!-- Card: ChicWear -->
+                  <div class="bg-white rounded-xl shadow p-4">
+                    <h3 class="font-semibold text-lg">ChicWear</h3>
+                    <p class="text-sm text-gray-500 mb-1">Clothing & Accessories</p>
+                    <p class="text-sm">Budget Range: <span class="font-medium">Product Review</span></p>
+                    <p class="text-sm mb-3">Budget Range: <span class="font-medium">$100–300</span></p>
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 text-sm">Submit Proposal</button>
+                  </div>
+            
+                  <!-- Card: EcoHome -->
+                  <div class="bg-white rounded-xl shadow p-4">
+                    <h3 class="font-semibold text-lg">EcoHome</h3>
+                    <p class="text-sm text-gray-500 mb-1">Home & Living</p>
+                    <p class="text-sm">Collaboration: <span class="font-medium">Brand Endorsement</span></p>
+                    <p class="text-sm mb-3">Budget Range: <span class="font-medium">$400–1,000</span></p>
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 text-sm">Submit Proposal</button>
+                  </div>
+            
+                  <!-- Card: NutriBoost -->
+                  <div class="bg-white rounded-xl shadow p-4">
+                    <h3 class="font-semibold text-lg">NutriBoost</h3>
+                    <p class="text-sm text-gray-500 mb-1">Health & Wellness</p>
+                    <p class="text-sm">Sponsored Post: <span class="font-medium">SponsorPost</span></p>
+                    <p class="text-sm mb-3">Budget Range: <span class="font-medium">$150–400</span></p>
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 text-sm">Submit Proposal</button>
+                  </div>
+            
+                </div>
+              </section>
+
+              <!-- upwork part -->
+             
+                
+             <section class="max-w-4xl mx-auto p-4">
+
+            <!-- Green Banner -->
+            <div class="bg-green-500 text-white rounded-lg p-6 flex justify-between items-center mb-6">
+            <div>
+                <h2 class="text-lg font-semibold">Upwork 101 will guide you through the basics of our platform.</h2>
+                <p class="text-sm mt-1">Learn how to get started on Upwork</p>
+                <button class="mt-4 bg-white text-green-600 px-4 py-2 rounded hover:bg-gray-100 text-sm font-medium">
+                Explore Upwork 101
+                </button>
+            </div>
+            <i class="fa-solid fa-person-running text-6xl pr-10"></i>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="mb-4">
+            <input
+                type="text"
+                placeholder="Search for jobs"
+                class="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring focus:ring-green-400"
+            />
+            </div>
+
+            <!-- Tabs -->
+            <div class="flex space-x-4 border-b border-gray-200 mb-4 text-sm">
+            <button class="pb-2 border-b-2 border-green-500 text-green-600 font-medium">Best Matches</button>
+            <button class="pb-2 hover:text-green-600">Most Recent</button>
+            <button class="pb-2 hover:text-green-600">Saved Jobs (17)</button>
+            </div>
+
+            <!-- Job Card 1 -->
+            <div class="bg-white rounded-lg p-5 shadow mb-4">
+            <p class="text-xs text-gray-500 mb-1">Posted 15 minutes ago</p>
+            <h3 class="text-lg font-semibold mb-2">
+                Meta/Facebook/Instagram Ads Manager Expert Needed for Home Improvement Business
+            </h3>
+            <p class="text-sm text-gray-700 mb-2">
+                Hourly: $45–$85 • Est. Time: 1 to 3 months, 30+ hrs/week
+            </p>
+            <p class="text-sm mb-2 line-clamp-3">
+                We are seeking a highly skilled Meta/Facebook/Instagram Ads Manager to drive our advertising strategy...
+            </p>
+            <div class="flex flex-wrap gap-2 text-xs mb-3">
+                <span class="bg-gray-200 px-2 py-1 rounded">Social Media Marketing</span>
+                <span class="bg-gray-200 px-2 py-1 rounded">Instagram</span>
+                <span class="bg-gray-200 px-2 py-1 rounded">Facebook</span>
+            </div>
+            <div class="flex items-center space-x-4 text-xs text-gray-600">
+                <span>✅ Payment verified</span>
+                <span>$100k+ spent</span>
+                <span>🇺🇸 United States</span>
+                <span>💼 Proposals: 5 to 10</span>
+            </div>
+            </div>
+
+            <!-- Job Card 2 -->
+            <div class="bg-white rounded-lg p-5 shadow mb-4">
+            <p class="text-xs text-gray-500 mb-1">Posted 1 hour ago</p>
+            <h3 class="text-lg font-semibold mb-2">
+                Social Media and SEO Assistant Needed
+            </h3>
+            <p class="text-sm text-gray-700 mb-2">
+                Hourly • Est. Time: More than 6 months • Less than 30 hrs/week
+            </p>
+            <p class="text-sm mb-2 line-clamp-3">
+            <span>$300+ spent</span>
+                <span>🇺🇸 United States</span>
+            </div>
+            </div>       I am looking for a proactive assistant to help manage my social media accounts and optimize my website for SEO...
+            </p>
+            <div class="flex flex-wrap gap-2 text-xs mb-3">
+                <span class="bg-gray-200 px-2 py-1 rounded">Social Media Marketing</span>
+                <span class="bg-gray-200 px-2 py-1 rounded">Facebook</span>
+                <span class="bg-gray-200 px-2 py-1 rounded">SEO</span>
+            </div>
+            <div class="flex items-center space-x-4 text-xs text-gray-600">
+                <span>✅ Payment verified</span>
+             
+  </section>     
+  
+  <!-- last one -->
+  <section class="w-full bg-gray-50 p-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-6">
+  
+      <!-- Job Details (Left Section) -->
+      <div class="lg:col-span-2 bg-white p-6 rounded-lg shadow">
+        <button class="text-green-600 text-sm mb-4">&larr; Back</button>
+  
+        <h1 class="text-2xl font-semibold mb-2">Social Media Marketing Expert Needed</h1>
+        <p class="text-sm text-gray-500 mb-4">Posted 1 hour ago · 🌐 Worldwide</p>
+  
+        <p class="text-gray-700 text-sm mb-6">
+          We are seeking a highly skilled Social Media Marketing Expert to enhance our online presence and engage our target audience effectively. The ideal candidate will develop and implement strategic social media campaigns across various platforms, analyze performance metrics, and optimize content for maximum reach. A strong understanding of current trends and best practices is essential. If you have a proven track record in driving brand awareness and building communities online, we want to hear from you!
+        </p>
+  
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 border-t border-b py-4 mb-4 text-sm">
+          <div class="flex items-center space-x-2">
+            <span>💲</span>
+            <div>
+              <p class="font-medium">$10.00</p>
+              <p class="text-gray-500 text-xs">Fixed-price</p>
+            </div>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span>⭐</span>
+            <div>
+              <p class="font-medium">Intermediate</p>
+              <p class="text-gray-500 text-xs">Looking for mix of experience and value</p>
+            </div>
+          </div>
+        </div>
+  
+        <p class="text-sm mb-4"><strong>Project Type:</strong> Ongoing project</p>
+  
+        <div class="mb-4">
+          <h2 class="font-semibold mb-2">Skills and Expertise</h2>
+          <div class="flex flex-wrap gap-2 text-xs">
+            <span class="bg-gray-200 px-2 py-1 rounded">Facebook</span>
+            <span class="bg-gray-200 px-2 py-1 rounded">Instagram</span>
+            <span class="bg-gray-200 px-2 py-1 rounded">Social Media Marketing</span>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Sidebar (Right Section) -->
+      <div class="bg-white p-6 rounded-lg shadow space-y-4 h-fit">
+        <a href="#" class="text-green-600 text-sm block">🔗 Open job in a new window</a>
+        <button class="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700 text-sm font-medium">Apply now</button>
+        <button class="w-full border border-green-600 text-green-600 py-2 rounded text-sm hover:bg-green-50">Save job</button>
+        <button class="text-gray-500 text-sm underline">🚩 Flag as inappropriate</button>
+  
+        <div class="text-xs text-gray-600">
+          <p>Send a proposal for: <strong>8 Connects</strong></p>
+          <p>Available Connects: <strong>114</strong></p>
+        </div>
+  
+        <hr />
+  
+        <div class="text-sm text-gray-800 space-y-2">
+          <h3 class="font-semibold text-base">About the client</h3>
+          <p>✅ Payment method verified</p>
+          <p>📞 Phone number verified</p>
+          <p>⭐ 5.0 out of 80 reviews</p>
+          <p>📍 United States – New York 12:43 PM</p>
+          <p>📄 98 jobs posted, 88% hire rate</p>
+          <p>💰 $1.3K total spent</p>
+          <p>🎯 91 hires, 4 active</p>
+          <p>📅 Member since Jan 21, 2025</p>
+        </div>
+  
+        <div>
+          <h4 class="text-sm font-semibold mb-1">Job link</h4>
+          <input type="text" value="https://www.upwork.com/jobs/" class="w-full text-xs border border-gray-300 px-2 py-1 rounded bg-gray-100" readonly>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    </main>
+    
+    <footer>
+        <footer class="footer sm:footer-horizontal bg-base-300 text-base-content p-10">
+            <nav>
+              <h6 class="footer-title">Services</h6>
+              <a class="link link-hover">Branding</a>
+              <a class="link link-hover">Design</a>
+              <a class="link link-hover">Marketing</a>
+              <a class="link link-hover">Advertisement</a>
+            </nav>
+            <nav>
+              <h6 class="footer-title">Company</h6>
+              <a class="link link-hover">About us</a>
+              <a class="link link-hover">Contact</a>
+              <a class="link link-hover">Jobs</a>
+              <a class="link link-hover">Press kit</a>
+            </nav>
+            <nav>
+              <h6 class="footer-title">Social</h6>
+              <div class="grid grid-flow-col gap-4">
+                <a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    class="fill-current">
+                    <path
+                      d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+                  </svg>
+                </a>
+                <a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    class="fill-current">
+                    <path
+                      d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+                  </svg>
+                </a>
+                <a>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    class="fill-current">
+                    <path
+                      d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+                  </svg>
+                </a>
+              </div>
+            </nav>
+          </footer>
+    </footer>
+</body>
+</html>

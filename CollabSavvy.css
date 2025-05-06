@@ -1,0 +1,20 @@
+.manrope-normal {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;  /* Normal weight (replace with desired weight) */
+    font-style: normal;
+}
+.borderStyle{
+    height: 28rem;
+    width: auto;
+    background-color: #EAEAEA;
+}
+.cards{
+    background-color: white;
+    height: 15px;
+}
+.flexy{
+    display: flex;
+    justify-content: space-around;
+    
+}
